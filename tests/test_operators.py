@@ -38,39 +38,39 @@ def test_addition_should_return_none_with_non_digit_symbol():
     assert sut.addition(operation) == expected_value
 
 
-def test_should_make_substraction():
+def test_should_make_subtraction():
     sut = Operators()
     operation = "5.5 - 10"
     expected_value = -4.5
-    assert sut.substraction(operation) == expected_value
+    assert sut.subtraction(operation) == expected_value
 
 
-def test_should_make_multiple_substraction():
+def test_should_make_multiple_subtraction():
     sut = Operators()
     operation = "5.5 - 10 - 30 - 13.7"
     expected_value = -48.2
-    assert sut.substraction(operation) == expected_value
+    assert sut.subtraction(operation) == expected_value
 
 
-def test_substraction_should_return_none_with_wrong_operator():
+def test_subtraction_should_return_none_with_wrong_operator():
     sut = Operators()
     operation = "5.5 * 10"
     expected_value = None
-    assert sut.substraction(operation) == expected_value
+    assert sut.subtraction(operation) == expected_value
 
 
-def test_substraction_should_return_none_with_wrong_operation():
+def test_subtraction_should_return_none_with_wrong_operation():
     sut = Operators()
     operation = "5.5 + 10 - 10"
     expected_value = None
-    assert sut.substraction(operation) == expected_value
+    assert sut.subtraction(operation) == expected_value
 
 
-def test_substraction_should_return_none_with_non_digit_symbol():
+def test_subtraction_should_return_none_with_non_digit_symbol():
     sut = Operators()
     operation = "5.5 - 10 - A"
     expected_value = None
-    assert sut.substraction(operation) == expected_value
+    assert sut.subtraction(operation) == expected_value
 
 
 def test_should_make_multiplication():

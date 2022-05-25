@@ -6,10 +6,10 @@ def test_should_print_menu(capsys):
     out, err = capsys.readouterr()
     expect_out = ("\n=========== MENU ==========="
                   "\n1 - Addition"
-                  "\n2 - Soustraction"
+                  "\n2 - Subtraction"
                   "\n3 - Multiplication"
                   "\n4 - Division"
-                  "\n5 - Quitter"
+                  "\n5 - Exit"
                   "\n============================\n\n")
     assert out == expect_out
 
@@ -26,7 +26,7 @@ def test_should_print_result(capsys):
     result = 15
     View.print_result(operation, result)
     out, err = capsys.readouterr()
-    expect_out = f"RESULTAT : {operation} = {result}\n"
+    expect_out = f"RESULT : {operation} = {result}\n"
     assert out == expect_out
 
 
@@ -35,5 +35,5 @@ def test_should_print_result_with_error(capsys):
     result = None
     View.print_result(operation, result)
     out, err = capsys.readouterr()
-    expect_out = f"Votre operation est incorrect ! : {operation}\n"
+    expect_out = f"Your operation is wrong! : {operation}\n"
     assert out == expect_out
