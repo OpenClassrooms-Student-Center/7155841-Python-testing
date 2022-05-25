@@ -21,19 +21,19 @@ def test_addition_should_return_none_with_wrong_operator(calculation, result):
 
 @pytest.mark.parametrize("calculation, result",
     [("5.5 - 10", -4.5), ("10 - 3 - 2", 5), ("5 - 5", 0)])
-def test_should_make_substraction(calculation, result):
+def test_should_make_subtraction(calculation, result):
     sut = Operators()
     operation = calculation
     expected_value = result
-    assert sut.substraction(operation) == expected_value
+    assert sut.subtraction(operation) == expected_value
 
 @pytest.mark.parametrize("calculation, result",
     [("5.5 + 10", None), ("2 - 2 * 10", None)])
-def test_substraction_should_return_none_with_wrong_operator(calculation, result):
+def test_subtraction_should_return_none_with_wrong_operator(calculation, result):
     sut = Operators()
     operation = calculation
     expected_value = result
-    assert sut.substraction(operation) == expected_value
+    assert sut.subtraction(operation) == expected_value
 
 @pytest.mark.parametrize("calculation, result",
     [("5.5 * 10", 55), ("100 * 2 * 4", 800), ("4.8 * 5", 24)])
