@@ -20,12 +20,12 @@ def test_addition(mocker):
     sut.run()
     assert sut.result == expected_value
 
-def test_substraction(mocker):
+def test_subtraction(mocker):
     expected_value = 2.0
     sut = Controller()
     mock = mocker.patch('calculate.view.View.get_user_input')
     mock.side_effect = ["2", "10-10", "5"]
-    mocker.patch('calculate.operators.Operators.substraction',
+    mocker.patch('calculate.operators.Operators.subtraction',
         return_value = expected_value)
     mocker.patch('calculate.view.View.continue_message')
 
