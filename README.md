@@ -1,62 +1,52 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
-# Mini-Projet Calculatrice
+# Calculator mini-project
+This project has been created for you to practice unit testing using Pytest and Unittest. The source code contains a calculator mini-project that performs four different operations (addition, subtraction, multiplication and division). You can use it to develop a set of scenarios needed to test all the source code. Note that the suggested solutions are available in different branches of the directory structure.
 
-Ce projet a été implémenté dans le but de s'entrainer au test unitaire à l'aide Pytest et UnitTest. Le code source
-contient un mini-projet calculatrice qui permet d'effectuer 4 opérations différentes (addition, soustraction, 
-multiplication et division). Vous pourrez ainsi développer l'ensemble des scénarios nécessaires afin de tester 
-l'ensemble du code source. À noter que des propositions de corrections sont mises à disposition dans différentes branches 
-du répertoire.
-
-## Pré-requis
-
-* Installer Python 3 : [Téléchargement Python 3](https://www.python.org/downloads/)
-* Installer git : [Téléchargement Git](https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Installation-de-Git)
+## Prerequisites
+- Install Python 3: [Python 3 download](https://www.python.org/downloads/)
+- Install git: [Git download](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 ## Installation
-
-### 1. Télécharger le projet sur votre répertoire local : 
-```
+1. Download the Project to Your Local Directory:
+```shell
 git clone https://github.com/OpenClassrooms-Student-Center/4425126-testing-python.git 
 cd 4425126-testing-python
 ```
-### 2. Mettre en place un environnement virtuel :
-* Créer l'environnement virtuel: `python -m venv venv`
-* Activer l'environnement virtuel :
-    * Windows : `venv\Scripts\activate.bat`
-    * Unix/MacOS : `source venv/bin/activate`
 
-    
-### 3. Installer les dépendances du projet
-```
+2. Set up a Virtual Environment:
+  - Create the virtual environment: `python -m venv venv`
+  - Activate the virtual environment:
+    - Windows: `venv\Scripts\activate.bat`
+    - Unix/MacOS: `source venv/bin/activate`
+3. Install project dependencies
+```shell
 pip install -r requirements.txt
 ```
 
-## Démarrage
-* Lancer le script à l'aide de la commande suivante : `python main.py`
+## Run
+Run the script using the following command: `python main.py`
 
-## Corrections
-1. Proposition de correction pour les tests unitaires avec UnitTest :
-```
+## Solutions
+1. Suggested solution for unit testing using Unittest:
+```shell
 git checkout unittest-test
 python -m unittest discover tests/
 ```
 
-2. Proposition de correction pour les tests unitaires avec Pytest :
-```
+2. Suggested solution for unit testing using Pytest:
+```shell
 git checkout pytest-test
 pytest
 ```
 
-3. Proposition de correction pour les mocks avec Pytest:
-```
+3. Suggested solution for mocks using Pytest:
+```shell
 git checkout mock-test
 pytest
 ```
 
-4. Proposition de correction pour les tests paramétriques Pytest :
-```
+4. Suggested solution for parametrized testing using Pytest:
+```shell
 git checkout parametrize-test
 pytest
 ```
-
-
