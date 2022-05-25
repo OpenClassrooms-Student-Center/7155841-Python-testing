@@ -66,4 +66,3 @@ def test_division_should_return_none_with_wrong_operator(calculation, result):
     operation = calculation
     expected_value = result
     assert sut.division(operation) == expected_value
-
