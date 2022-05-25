@@ -13,6 +13,7 @@ class Operators:
         """
         self.operation = operation
         self.operator = "+"
+        self.signe = "+"
         if self._is_operation_valid():
             self._calculate_addition()
             return self.result
