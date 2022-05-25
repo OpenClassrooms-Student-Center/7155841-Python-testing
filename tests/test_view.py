@@ -17,10 +17,10 @@ class TestView(unittest.TestCase):
         output = self.temp_stdout.getvalue()
         expect_out = ("\n=========== MENU ==========="
                       "\n1 - Addition"
-                      "\n2 - Soustraction"
+                      "\n2 - Subtraction"
                       "\n3 - Multiplication"
                       "\n4 - Division"
-                      "\n5 - Quitter"
+                      "\n5 - Exit"
                       "\n============================\n\n")
         self.assertEqual(output, expect_out)
 
@@ -39,7 +39,7 @@ class TestView(unittest.TestCase):
             View.print_result(operation, result)
 
         output = self.temp_stdout.getvalue()
-        expect_out = f"RESULTAT : {operation} = {result}\n"
+        expect_out = f"RESULT : {operation} = {result}\n"
         self.assertEqual(output, expect_out)
 
     def test_should_print_result_with_error(self):
@@ -49,7 +49,7 @@ class TestView(unittest.TestCase):
             View.print_result(operation, result)
 
         output = self.temp_stdout.getvalue()
-        expect_out = f"Votre operation est incorrect ! : {operation}\n"
+        expect_out = f"Your operation is wrong! : {operation}\n"
         self.assertEqual(output, expect_out)
 
 

@@ -36,36 +36,36 @@ class TestAdditionOperator(unittest.TestCase):
         self.assertEqual(sut.addition(operation), expected_value)
 
 
-class TestSubstractionOperator(unittest.TestCase):
-    def test_should_make_substraction(self):
+class TestSubtractionOperator(unittest.TestCase):
+    def test_should_make_subtraction(self):
         sut = Operators()
         operation = "5.5 - 10"
         expected_value = -4.5
-        self.assertEqual(sut.substraction(operation), expected_value)
+        self.assertEqual(sut.subtraction(operation), expected_value)
 
-    def test_should_make_multiple_substraction(self):
+    def test_should_make_multiple_subtraction(self):
         sut = Operators()
         operation = "5.5 - 10 - 30 - 13.7"
         expected_value = -48.2
-        self.assertEqual(sut.substraction(operation), expected_value)
+        self.assertEqual(sut.subtraction(operation), expected_value)
 
-    def test_substraction_should_return_none_with_wrong_operator(self):
+    def test_subtraction_should_return_none_with_wrong_operator(self):
         sut = Operators()
         operation = "5.5 * 10"
         expected_value = None
-        self.assertEqual(sut.substraction(operation), expected_value)
+        self.assertEqual(sut.subtraction(operation), expected_value)
 
-    def test_substraction_should_return_none_with_wrong_operation(self):
+    def test_subtraction_should_return_none_with_wrong_operation(self):
         sut = Operators()
         operation = "5.5 + 10 - 10"
         expected_value = None
-        self.assertEqual(sut.substraction(operation), expected_value)
+        self.assertEqual(sut.subtraction(operation), expected_value)
 
-    def test_substraction_should_return_none_with_non_digit_symbol(self):
+    def test_subtraction_should_return_none_with_non_digit_symbol(self):
         sut = Operators()
         operation = "5.5 - 10 - A"
         expected_value = None
-        self.assertEqual(sut.substraction(operation), expected_value)
+        self.assertEqual(sut.subtraction(operation), expected_value)
 
 
 class TestMultiplicationOperator(unittest.TestCase):
