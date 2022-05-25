@@ -13,14 +13,14 @@ class Controller:
             which operation he would like to use.
         """
         View.print_menu()
-        is_home_menu_run = True
-        while is_home_menu_run:
-            input_msg = "Entrez votre choix"
-            user_input = View.get_user_input(input_msg)
+        is_running = True
+        while is_running:
+            input_message = "Enter your choice"
+            user_input = View.get_user_input(input_message)
             if self._is_input_valid(user_input):
                 self._operations(user_input)
                 View.print_menu()
-            is_home_menu_run = self._is_quit(user_input)
+            is_running = self._is_not_quit(user_input)
         View.end_message()
 
     def _is_input_valid(self, user_input):
@@ -40,13 +40,13 @@ class Controller:
 
             :param user_input: User input enter in the method run().
         """
-        input_msg = "Entrez votre opération"
-        operation = View.get_user_input(input_msg)
+        input_message = "Enter the expression to calculate"
+        operation = View.get_user_input(input_message)
 
         if user_input == "1":
             self.result = self.operator.addition(operation)
         elif user_input == "2":
-            self.result = self.operator.substraction(operation)
+            self.result = self.operator.subtraction(operation)
         elif user_input == "3":
             self.result = self.operator.multiplication(operation)
         elif user_input == "4":
@@ -55,7 +55,7 @@ class Controller:
         View.print_result(operation, self.result)
         View.continue_message()
 
-    def _is_quit(self, user_input):
+    def _is_not_quit(self, user_input):
         """
             Checks if the user ask for stop the script thanks to the input enter
             in the method run().
@@ -63,4 +63,4 @@ class Controller:
             :param user_input: User input enter in the method run().
             :return: True if the user ask for exit the script.
         """
-        return not user_input == "5"
+        return user_input != "5"

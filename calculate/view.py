@@ -6,21 +6,21 @@ class View:
         """
         print("\n=========== MENU ===========")
         print("1 - Addition")
-        print("2 - Soustraction")
+        print("2 - Subtraction")
         print("3 - Multiplication")
         print("4 - Division")
-        print("5 - Quitter")
+        print("5 - Exit")
         print("============================\n")
 
     @staticmethod
-    def get_user_input(input_msg):
+    def get_user_input(input_message):
         """
             Function to ask an input.
 
-            :param input_msg: Message insert into the input function.
+            :param input_message: Message insert into the input function.
             :return: The user input.
         """
-        user_input = input(f"{input_msg} : ")
+        user_input = input(f"{input_message} : ")
         return user_input
 
     @staticmethod
@@ -35,7 +35,7 @@ class View:
         """
             Requests to press enter to continue.
         """
-        input("Appuyez sur ENTRER pour continuer ...")
+        input("Press ENTER to continue ...")
 
     @staticmethod
     def print_result(operation, result):
@@ -46,6 +46,6 @@ class View:
             :param result: The result calculate by the script
         """
         if result is not None:
-            print(f"RESULTAT : {operation} = {result}")
+            print(f"RESULT : {operation} = {result}")
         else:
-            print(f"Votre operation est incorrect ! : {operation}")
+            print(f"Your operation is wrong! : {operation}")
