@@ -9,8 +9,8 @@ class Controller:
 
     def run(self):
         """
-            Run the principal Menu and the user can choice
-            which operation he would like to use.
+            Run the principal Menu and the user can choose
+            which operation they would like to use.
         """
         View.print_menu()
         is_running = True
@@ -25,7 +25,7 @@ class Controller:
 
     def _is_input_valid(self, user_input):
         """
-            Checks if the input corresponds to a possibility of operations.
+            Checks if the input corresponds to a valid operation
 
             :param user_input: User input enter in the method run().
             :return: Return True if the input corresponds to a possibility of operations
@@ -35,8 +35,8 @@ class Controller:
 
     def _operations(self, user_input):
         """
-            Calls the function corresponding with the operation ask by the user and
-            get the user operation by an input.
+            Calls the function corresponding with the operation requested by the user and
+            determines the operation from user input
 
             :param user_input: User input enter in the method run().
         """
@@ -57,8 +57,7 @@ class Controller:
 
     def _is_not_quit(self, user_input):
         """
-            Checks if the user ask for stop the script thanks to the input enter
-            in the method run().
+            Checks if the user asked to stop the script 
 
             :param user_input: User input enter in the method run().
             :return: True if the user ask for exit the script.

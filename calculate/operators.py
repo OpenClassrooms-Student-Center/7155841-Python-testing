@@ -19,7 +19,7 @@ class Operators:
 
     def subtraction(self, operation):
         """
-            Handles an subtraction operation.
+            Handles a subtraction operation.
 
             :param operation: The requested operation by user.
             :return: The subtraction result if the operation is valid.
@@ -32,7 +32,7 @@ class Operators:
 
     def multiplication(self, operation):
         """
-            Handles an multiplication operation.
+            Handles a multiplication operation.
 
             :param operation: The requested operation by user.
             :return: The multiplication result if the operation is valid.
@@ -45,7 +45,7 @@ class Operators:
 
     def division(self, operation):
         """
-            Handles an division operation.
+            Handles a division operation.
 
             :param operation: The requested operation by user.
             :return: The division result if the operation is valid.
