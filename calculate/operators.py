@@ -84,9 +84,9 @@ class Operators:
 
     def _is_float(self, value):
         """
-            Checks if all others symbols can be converted to float value.
+            Checks if the given symbol can be converted to float value.
 
-            :return: True if all symbol can be converted to float value.
+            :return: True if the symbol can be converted to float value.
         """
         try:
             float(value)
