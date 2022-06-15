@@ -72,9 +72,9 @@ class Operators:
 
     def _is_symbol_valid(self):
         """
-            Checks if the operation match with the type of operation request by the user.
+            Checks if the operation matches with the type of operation requested by the user.
 
-            :return: True if all symbol in the operation is valid.
+            :return: True if all symbols in the operation are valid.
         """
         symbols = [symbol for symbol in self.operation if not symbol.isdigit()]
         for symbol in symbols:

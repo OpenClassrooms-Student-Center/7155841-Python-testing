@@ -57,7 +57,7 @@ class Controller:
 
     def _is_not_quit(self, user_input):
         """
-            Checks if the user asked to stop the script 
+            Checks if the user asked to stop the script
 
             :param user_input: User input enter in the method run().
             :return: True if the user ask for exit the script.
